@@ -4,9 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Six Games</title>
-   <!-- Tailwind CSS CDN -->
    <script src="https://cdn.tailwindcss.com"></script>
-   <!-- Font Awesome for icons -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <style>
        /* Custom styles */
@@ -20,16 +18,20 @@
        .bottom-nav {
            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
        }
-       /* Style for the captcha text */
+       
+       /* =================================================
+       STYLE CHANGES FOR SMALLER FORM
+       =================================================
+       */
        .captcha-text {
            font-family: 'Courier New', Courier, monospace;
-           font-size: 1.5rem;
+           font-size: 1.125rem; /* Reduced from 1.5rem */
            font-weight: bold;
-           letter-spacing: 4px;
+           letter-spacing: 2px; /* Reduced from 4px */
            text-decoration: line-through;
            user-select: none;
            background-color: #e5e7eb;
-           padding: 0.5rem;
+           padding: 0.25rem; /* Reduced from 0.5rem */
            border-radius: 0.375rem;
            text-align: center;
        }
@@ -37,24 +39,19 @@
 </head>
 <body class="pb-20">
 
-   <!-- Main container for mobile view -->
    <div class="max-w-md mx-auto bg-white shadow-lg">
 
-       <!-- 1. Header Section -->
        <header class="header-gradient p-4">
-           <!-- Logo and Title -->
            <div class="flex items-center justify-between mb-4">
                <div class="flex items-center space-x-2">
-                   <span class="text-3xl">🎰</span> <!-- Placeholder for 777 logo -->
+                   <span class="text-3xl">🎰</span>
                    <h1 class="text-xl font-bold text-red-700">Six Games</h1>
-                   <span class="text-3xl">💃</span> <!-- Placeholder for cartoon woman -->
+                   <span class="text-3xl">💃</span>
                </div>
                <h2 class="text-sm font-semibold text-gray-700">Recruitment Agent</h2>
            </div>
 
-           <!-- Language and Auth Buttons -->
            <div class="flex items-center justify-between">
-               <!-- Language Switch -->
                <div class="flex space-x-2">
                    <button class="flex items-center space-x-1 bg-white/70 px-3 py-1 rounded-full shadow text-sm font-medium">
                        <span>🇬🇧</span>
@@ -66,20 +63,17 @@
                    </button>
                </div>
                
-               <!-- Auth Buttons -->
                <div class="flex space-x-2">
-                   <!-- ADDED ID HERE -->
                    <button id="signUpButton" class="bg-green-600 text-white px-4 py-2 rounded-full font-bold shadow-md text-sm">
                        SIGN UP
                    </button>
-                   <button class="bg-red-600 text-white px-4 py-2 rounded-full font-bold shadow-md text-sm">
+                   <button id="loginButton" class="bg-red-600 text-white px-4 py-2 rounded-full font-bold shadow-md text-sm">
                        LOGIN
                    </button>
                </div>
            </div>
        </header>
 
-       <!-- 2. Top Navigation Menu (Same as before) -->
        <nav class="bg-white flex justify-around p-4 shadow-sm">
            <a href="#" class="flex flex-col items-center text-center text-gray-700">
                <i class="fas fa-home text-2xl text-blue-500 mb-1"></i>
@@ -103,17 +97,15 @@
            </a>
        </nav>
 
-       <!-- 3. Notice Box (Same as before) -->
        <div class="p-4">
            <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-4 text-gray-800">
                <h3 class="font-bold text-lg mb-2">Notice:</h3>
                <p class="text-sm" lang="ur" dir="rtl">
-                   حال ہی میں ادائیگی کے چینلز میں عدم استحکام پایا جا رہا ہے، جس کی وجہ سے کامیاب ادائیگی کی شرح کم ہے۔ ہم اس مسئلے کو ہنگامی طور پر حل کرنے کی کوشش کر رہے ہیں۔ اس پریشانی کے لیے ہم دل سے معذرت خواہ ہیں
+                   حال ہی میں ادائیگی کے چینلز میں عدم استحکام پaya ja raha hai, jis ki wajah se kamyab adaigi ki sharah kam hai. Hum is maslay ko hangami tor par hal karne ki koshish kar rahe hain. Is pareshani ke liye hum dil se maazrat khwah hain
                </p>
            </div>
        </div>
 
-       <!-- 4. Download/Promotion Box (Same as before) -->
        <div class="p-4">
            <div class="bg-white rounded-lg shadow-md p-6 text-center">
                <div class="flex justify-around items-center mb-6">
@@ -134,9 +126,8 @@
            </div>
        </div>
 
-   </div> <!-- End of max-w-md container -->
-
-   <!-- 5. Bottom Footer Menu (Same as before) -->
+   </div> 
+   
    <footer class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white bottom-nav flex justify-around p-3">
        <a href="#" class="flex flex-col items-center text-center text-blue-600 font-bold">
            <i class="fas fa-home text-xl mb-1"></i>
@@ -156,67 +147,55 @@
        </a>
    </footer>
 
-   <!-- 
-   =================================================
-   NEW POPUP MODAL CODE STARTS HERE
-   =================================================
-   -->
-
-   <!-- Registration Modal -->
    <div id="registerModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
-       <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm relative">
+       <div class="bg-white p-4 rounded-lg shadow-xl w-full max-w-sm relative">
            
-           <!-- Close Button -->
            <button id="closeModalButton" class="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-2xl">×</button>
            
-           <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Register to Join</h2>
+           <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Register to Join</h2>
            
-           <form id="registerForm" class="space-y-4">
+           <form id="registerForm" class="space-y-2">
                
                <div>
-                   <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                   <input type="text" id="username" name="username" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-               </div>
-               
-               <div>
-                   <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                   <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                   <label for="username" class="block text-xs font-medium text-gray-700">Username</label>
+                   <input type="text" id="username" name="username" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
                </div>
                
                <div>
-                   <label for="confirm_password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
-                   <input type="password" id="confirm_password" name="confirm_password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                   <label for="password" class="block text-xs font-medium text-gray-700">Password</label>
+                   <input type="password" id="password" name="password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
+               </div>
+               
+               <div>
+                   <label for="confirm_password" class="block text-xs font-medium text-gray-700">Confirm Password</label>
+                   <input type="password" id="confirm_password" name="confirm_password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
                </div>
 
                <div>
-                   <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
-                   <input type="tel" id="number" name="number" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                   <label for="number" class="block text-xs font-medium text-gray-700">Number</label>
+                   <input type="tel" id="number" name="number" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
                </div>
 
                <div>
-                   <label for="game_id" class="block text-sm font-medium text-gray-700">Six Games - Game ID</label>
-                   <input type="text" id="game_id" name="game_id" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                   <label for="game_id" class="block text-xs font-medium text-gray-700">Six Games - Game ID</label>
+                   <input type="text" id="game_id" name="game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
                </div>
 
-               <!-- Captcha Section -->
                <div>
-                   <label class="block text-sm font-medium text-gray-700">Captcha</label>
+                   <label class="block text-xs font-medium text-gray-700">Captcha</label>
                    <div class="flex items-center space-x-2 mt-1">
-                       <div id="captchaDisplay" class="captcha-text flex-1"></div>
-                       <button type="button" id="refreshCaptcha" class="p-2 text-blue-600 hover:text-blue-800">
+                       <div id="captchaDisplay" class="captcha-text flex-1"></div> <button type="button" id="refreshCaptcha" class="p-2 text-blue-600 hover:text-blue-800">
                            <i class="fas fa-sync-alt"></i>
                        </button>
                    </div>
-                   <input type="text" id="captchaInput" placeholder="Enter captcha" required class="mt-2 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                   <input type="text" id="captchaInput" placeholder="Enter captcha" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
                    <p id="captchaError" class="text-red-500 text-sm mt-1 hidden">Invalid captcha. Please try again.</p>
                </div>
 
-               <!-- Form Buttons -->
-               <div class="flex space-x-4">
-                   <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-md font-semibold hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+               <div class="flex space-x-4 pt-2"> <button type="submit" class="w-full bg-green-600 text-white py-1.5 px-4 rounded-md font-semibold hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 text-sm">
                        Submit
                    </button>
-                   <button type="reset" class="w-full bg-gray-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                   <button type="reset" class="w-full bg-gray-500 text-white py-1.5 px-4 rounded-md font-semibold hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 text-sm">
                        Reset
                    </button>
                </div>
@@ -224,7 +203,50 @@
        </div>
    </div>
 
-   <!-- Success Message Modal -->
+   <div id="loginModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
+       <div class="bg-white p-4 rounded-lg shadow-xl w-full max-w-sm relative">
+           
+           <button id="closeLoginModalButton" class="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-2xl">×</button>
+           
+           <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Login</h2>
+           
+           <form id="loginForm" class="space-y-3">
+               
+               <div>
+                   <label for="login_number" class="block text-xs font-medium text-gray-700">Enter Number</label>
+                   <input type="tel" id="login_number" name="login_number" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Aapka number">
+               </div>
+
+               <div>
+                   <label for="login_password" class="block text-xs font-medium text-gray-700">Enter Password</label>
+                   <input type="password" id="login_password" name="login_password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Aapka password">
+               </div>
+
+               <div>
+                   <label for="login_game_id" class="block text-xs font-medium text-gray-700">Six Games - Game ID</label>
+                   <input type="text" id="login_game_id" name="login_game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Aapki Game ID">
+               </div>
+
+               <div>
+                   <label for="login_otp" class="block text-xs font-medium text-gray-700">Enter OTP</label>
+                   <div class="flex items-center space-x-2 mt-1">
+                       <input type="text" id="login_otp" name="login_otp" required class="block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="OTP Code">
+                       <button type="button" id="getOtpButton" class="w-auto whitespace-nowrap bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-medium hover:bg-blue-600">
+                           Get OTP
+                       </button>
+                   </div>
+               </div>
+
+               <div class="pt-2">
+                   <button type="submit" class="w-full bg-red-600 text-white py-1.5 px-4 rounded-md font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-sm">
+                       Login
+                   </button>
+               </div>
+           </form>
+       </div>
+   </div>
+
+
    <div id="successModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
        <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-xs text-center">
            <i class="fas fa-check-circle text-green-500 text-5xl mb-4"></i>
@@ -235,126 +257,192 @@
        </div>
    </div>
 
-   <!-- 
-   =================================================
-   NEW JAVASCRIPT CODE STARTS HERE
-   =================================================
-   -->
    <script>
-       // Get all necessary elements from the DOM
-       const signUpButton = document.getElementById('signUpButton');
-       const registerModal = document.getElementById('registerModal');
-       const closeModalButton = document.getElementById('closeModalButton');
-       const registerForm = document.getElementById('registerForm');
+       // Wait for the entire HTML document to be fully loaded and parsed
+       document.addEventListener('DOMContentLoaded', function() {
+
+           // --- ELEMENTS FOR REGISTER MODAL ---
+           const signUpButton = document.getElementById('signUpButton');
+           const registerModal = document.getElementById('registerModal');
+           const closeModalButton = document.getElementById('closeModalButton');
+           const registerForm = document.getElementById('registerForm');
+           
+           const captchaDisplay = document.getElementById('captchaDisplay');
+           const captchaInput = document.getElementById('captchaInput');
+           const refreshCaptcha = document.getElementById('refreshCaptcha');
+           const captchaError = document.getElementById('captchaError');
+
+           const successModal = document.getElementById('successModal');
+           const closeSuccessModalBtn = document.getElementById('closeSuccessModal');
+
+           // --- NAYE ELEMENTS FOR LOGIN MODAL ---
+           const loginButton = document.getElementById('loginButton');
+           const loginModal = document.getElementById('loginModal');
+           const closeLoginModalButton = document.getElementById('closeLoginModalButton');
+           const loginForm = document.getElementById('loginForm');
+           const getOtpButton = document.getElementById('getOtpButton');
+
+
+           let currentCaptcha = '';
+
+           /**
+            * Generates a random 6-character alphanumeric captcha
+            */
+           function generateCaptcha() {
+               const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+               let result = '';
+               for (let i = 0; i < 6; i++) {
+                   result += chars.charAt(Math.floor(Math.random() * chars.length));
+               }
+               currentCaptcha = result;
+               captchaDisplay.textContent = currentCaptcha;
+               captchaError.classList.add('hidden'); // Hide error on refresh
+           }
+
+           /**
+            * Opens the registration modal
+            */
+           function openModal() {
+               registerModal.classList.remove('hidden');
+               registerModal.classList.add('flex');
+               generateCaptcha(); // Generate a new captcha each time modal opens
+               registerForm.reset(); // Clear form fields
+           }
+
+           /**
+            * Closes the registration modal
+            */
+           function closeModal() {
+               registerModal.classList.add('hidden');
+               registerModal.classList.remove('flex');
+           }
+
+           /**
+            * Opens the login modal
+            */
+           function openLoginModal() {
+               loginModal.classList.remove('hidden');
+               loginModal.classList.add('flex');
+               loginForm.reset(); // Clear form fields
+           }
+
+           /**
+            * Closes the login modal
+            */
+           function closeLoginModal() {
+               loginModal.classList.add('hidden');
+               loginModal.classList.remove('flex');
+           }
+
+
+           /**
+            * Opens the success message modal
+            */
+           function openSuccessModal() {
+               successModal.classList.remove('hidden');
+               successModal.classList.add('flex');
+           }
+
+           /**
+            * Closes the success message modal
+            */
+           function closeSuccessModal() {
+               successModal.classList.add('hidden');
+               successModal.classList.remove('flex');
+           }
+
+           // --- Event Listeners ---
+
+           // Register Modal Listeners
+           if (signUpButton) {
+               signUpButton.addEventListener('click', openModal);
+           }
+
+           if (closeModalButton) {
+               closeModalButton.addEventListener('click', closeModal);
+           }
+
+           if (registerModal) {
+               registerModal.addEventListener('click', function(event) {
+                   if (event.target === registerModal) {
+                       closeModal();
+                   }
+               });
+           }
+
+           if (registerForm) {
+               registerForm.addEventListener('submit', function(event) {
+                   event.preventDefault(); 
+
+                   if (captchaInput.value.toLowerCase() === currentCaptcha.toLowerCase()) {
+                       console.log('Registration successful!');
+                       closeModal();
+                       openSuccessModal();
+                       registerForm.reset(); 
+                       captchaError.classList.add('hidden');
+                   } else {
+                       captchaError.classList.remove('hidden');
+                       generateCaptcha(); 
+                       captchaInput.value = ''; 
+                   }
+               });
+           }
+
+           if (registerForm) {
+               registerForm.addEventListener('reset', function() {
+                   captchaError.classList.add('hidden'); 
+                   generateCaptcha(); 
+               });
+           }
+
+           if (refreshCaptcha) {
+               refreshCaptcha.addEventListener('click', generateCaptcha);
+           }
+
+           if (closeSuccessModalBtn) {
+               closeSuccessModalBtn.addEventListener('click', closeSuccessModal);
+           }
+           
+           // NAYE LOGIN MODAL KE LISTENERS
+           if (loginButton) {
+               loginButton.addEventListener('click', openLoginModal);
+           }
+
+           if (closeLoginModalButton) {
+               closeLoginModalButton.addEventListener('click', closeLoginModal);
+           }
+
+           if (loginModal) {
+               loginModal.addEventListener('click', function(event) {
+                   if (event.target === loginModal) {
+                       closeLoginModal();
+                   }
+               });
+           }
+           
+           if (loginForm) {
+                loginForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    // Yahan aap apna login logic add kar sakte hain
+                    console.log('Login Form Submitted');
+                    alert('Login functionality abhi implement nahi hui.');
+                    closeLoginModal();
+                });
+            }
+
+            if (getOtpButton) {
+                getOtpButton.addEventListener('click', function() {
+                    // Yahan aap 'Get OTP' ka logic add kar sakte hain
+                    console.log('Get OTP button clicked');
+                    alert('OTP request bhejne ka system abhi add nahi hua.');
+                });
+            }
+
+
+           // Initial captcha generation for register form
+           generateCaptcha();
        
-       const captchaDisplay = document.getElementById('captchaDisplay');
-       const captchaInput = document.getElementById('captchaInput');
-       const refreshCaptcha = document.getElementById('refreshCaptcha');
-       const captchaError = document.getElementById('captchaError');
-
-       const successModal = document.getElementById('successModal');
-       const closeSuccessModal = document.getElementById('closeSuccessModal');
-
-       let currentCaptcha = '';
-
-       /**
-        * Generates a random 6-character alphanumeric captcha
-        */
-       function generateCaptcha() {
-           const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-           let result = '';
-           for (let i = 0; i < 6; i++) {
-               result += chars.charAt(Math.floor(Math.random() * chars.length));
-           }
-           currentCaptcha = result;
-           captchaDisplay.textContent = currentCaptcha;
-           captchaError.classList.add('hidden'); // Hide error on refresh
-       }
-
-       /**
-        * Opens the registration modal
-        */
-       function openModal() {
-           registerModal.classList.remove('hidden');
-           registerModal.classList.add('flex');
-           generateCaptcha(); // Generate a new captcha each time modal opens
-           registerForm.reset(); // Clear form fields
-       }
-
-       /**
-        * Closes the registration modal
-        */
-       function closeModal() {
-           registerModal.classList.add('hidden');
-           registerModal.classList.remove('flex');
-       }
-
-       /**
-        * Opens the success message modal
-        */
-       function openSuccessModal() {
-           successModal.classList.remove('hidden');
-           successModal.classList.add('flex');
-       }
-
-       /**
-        * Closes the success message modal
-        */
-       function closeSuccessModal() {
-           successModal.classList.add('hidden');
-           successModal.classList.remove('flex');
-       }
-
-       // --- Event Listeners ---
-
-       // Open modal when SIGN UP is clicked
-       signUpButton.addEventListener('click', openModal);
-
-       // Close modal when 'x' is clicked
-       closeModalButton.addEventListener('click', closeModal);
-
-       // Close modal when clicking on the background overlay
-       registerModal.addEventListener('click', function(event) {
-           if (event.target === registerModal) {
-               closeModal();
-           }
-       });
-
-       // Handle form submission
-       registerForm.addEventListener('submit', function(event) {
-           event.preventDefault(); // Stop the form from reloading the page
-
-           // Check if captcha is correct (case-insensitive)
-           if (captchaInput.value.toLowerCase() === currentCaptcha.toLowerCase()) {
-               // Captcha is correct
-               console.log('Registration successful!');
-               closeModal();
-               openSuccessModal();
-               registerForm.reset(); // Clear the form
-               captchaError.classList.add('hidden');
-           } else {
-               // Captcha is incorrect
-               captchaError.classList.remove('hidden');
-               generateCaptcha(); // Generate a new captcha
-               captchaInput.value = ''; // Clear the wrong input
-           }
-       });
-
-       // Handle form reset
-       registerForm.addEventListener('reset', function() {
-           captchaError.classList.add('hidden'); // Hide error on reset
-           generateCaptcha(); // Get a new captcha
-       });
-
-       // Refresh captcha when refresh button is clicked
-       refreshCaptcha.addEventListener('click', generateCaptcha);
-
-       // Close success modal when OK is clicked
-       closeSuccessModal.addEventListener('click', closeSuccessModal);
-
-       // Generate the first captcha on page load
-       generateCaptcha();
-
+       }); 
    </script>
 
 </body>

